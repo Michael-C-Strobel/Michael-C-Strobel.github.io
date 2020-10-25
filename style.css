@@ -1,0 +1,155 @@
+html {
+    scroll-behavior: smooth;
+  }
+ 
+ /* Style the navbar */
+ #navbar {
+    overflow: hidden;
+    background:white;
+    z-index: 1;
+    width:100%;
+  }
+
+  #navbar-container {
+    padding-bottom: 20px;
+    padding-right:8%;
+  }
+
+  /* Navbar links */
+  #navbar a {
+    float: right;
+    display: block;
+    color: #5a5a5a;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 14px;
+    text-decoration: none;
+  }
+
+  #navbar a:hover {
+      color: #000000;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  } 
+
+  /* Page content */
+  .content {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin:0px;
+  }
+
+  /* Jumbotron Style */
+  /* Container holding the image and the text */
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  /* Centered text */
+  .Jumbo-Text {
+    position: absolute;
+    top: 22%;
+    left: 300px;
+    transform: translate(-50%, -50%);
+    font-weight:900;
+    font-size: 65px;
+  }
+
+  /* Setting color and behavior for social media links */
+  .socials {
+      color: white;
+  }
+
+  .socials:hover {
+      color: lightgrey;
+  }
+
+  .socials:active {
+      color: rgb(134, 133, 133);
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+  }
+
+  .Section {
+      padding: 5px;
+      padding-left: 10px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+  }
+
+  .Section-Light {
+    padding: 5px;
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* background-color: #e3e7ff; */
+  }
+
+  .Section p, .Section p {
+      padding-left: 7%;
+      padding-right: 7%;
+      font-weight: 300;
+  }
+
+  h1 {
+      font-weight:500;
+  }
+
+  .Experience-Container{
+      display:flex;
+  }
+
+  .Experience-Box {
+    width: 30%;
+    padding: 20px;
+    margin:20px;
+    margin-right: 15%;
+    background-color:#23314d;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+    color:#fff;
+    background: #23314d;
+    padding: 15px 20px 15px 20px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    float:right;
+    clear:right;
+  }
+
+  .Experience-Year {
+      float:left;
+      clear:left;
+      width: 30%;
+      padding: 20px;
+      margin:20px;
+      margin-left: 15%;
+  }
+  .Experience-Year>p {
+    text-align:right;
+    font-weight: 400;
+    font-size: 2em;
+  }
+
+  .Company-Logo-Container {
+    display:flex;
+    align-items: center;
+    justify-content: right;
+    height:70%;
+  }
