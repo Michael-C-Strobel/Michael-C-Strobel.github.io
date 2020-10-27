@@ -4,114 +4,144 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/61c4074430.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div id="navbar">
-        <div id ="navbar-container">
+    
+    <div id="navbar" class ='sticky'>
+        <div id="navbar-container">
             <a href="#contact">Contact</a>
             <a href="#projects">Projects</a>
             <a href="#experience">Experience</a>
-            <a href="#home">Home</a>   
+            <a href="#home">Home</a>
         </div>
-      </div> 
+    </div>
 
-      <script>
-        window.onscroll = function() {myFunction()};
-        
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-        
-        function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-          } else {
-            navbar.classList.remove("sticky");
-          }
-        }
-        </script>
-        <div class ="content">
-            <div class="container">
-                <img class="Jumbo" src="img/Net.JPG" style="width:100%; height:70%; object-fit:cover; max-height:700px">
-                <div class="Jumbo-Text">
-                    Michael Strobel<br>
-                    <a href="https://www.linkedin.com/in/strobelm/" target="_blank" class = "socials"><i class="fab fa-linkedin" style="font-size:30px; float:left; padding-right:15px"></i></a>
-                    <a href="#" target="_blank" class = "socials"><i class="fab fa-github" style="font-size:30px; float:left; padding-right:15px"></i></a>
-                    <a href="#" target="_blank" class = "socials"><i class="fas fa-envelope" style="font-size:30px; float:left;""></i></a>
+    <div class="content">
+        <a id="home"></a>
+        <div class="container">
+            <img class="Jumbo" src="img/Net.JPG" style="width:100%; height:70%; object-fit:cover; max-height:700px">
+            <div class="Jumbo-Text">
+                Michael Strobel<br>
+                <a href="https://www.linkedin.com/in/strobelm/" target="_blank" class="socials"><i
+                        class="fab fa-linkedin" style="font-size:30px; float:left; padding-right:15px"></i></a>
+                <a href="https://github.com/Michael-C-Strobel" target="_blank" class="socials"><i class="fab fa-github"
+                        style="font-size:30px; float:left; padding-right:15px"></i></a>
+                <a href="mailto:mikec.strobel@gmail.com" target="_blank" class="socials"><i class="fas fa-envelope"
+                        style="font-size:30px; float:left;""></i></a>
                 </div>
             </div>
+            <div class=" section">
+                        <h1 style="text-align:center">About</h1>
+                        <p>
+                            Hello, my name is Michael Strobel. I am an undergraduate computer science student at the
+                            University of Maryland, College Park currently pursuing a major in Computer Science and a
+                            minor in Statistics. I am currently interested in Aritificial Intelligence and Machine
+                            Learning Research, Software Development, and Quantitative Finance. <br><br>
+                            My professional experience includes Software Engineering and Full Lifecycle Development
+                            through an ongoing, two-year internship with Leidos Health at the Food & Drug
+                            Administration.
+                        </p>
+            </div>
+
+            <a id="experience"> </a>
+            <div class="section-light"> 
+            <h1 style="text-align:center">Experience</h1>
+            <div class="Experience-Container">
+                <div class="Experience-Year">
+                    <p>June 2020 - Present</p>
+                    <div class="Company-Logo-Container">
+                        <img src="img/Leidos.png" style="width:120px; height:120px; display:flex;">
+                    </div>
+                </div>
+                <div class="Experience-Box">
+                    <h3>Software Engineering Intern – Leidos Technology, <i>Baltimore, MD</i></h3>
+                    Added functionality to WebLogic application to continue to support the FDA. Collaborated with
+                    configuration management team to automate builds for other programs on the contract.
+                    <ul>
+                        <li>Wroting custom HTML and CSS to customize Oracle ADF view objects</li>
+                        <li>Creating new functionality based on business analysts’ user stories</li>
+                        <li>Participating in user story reviews to discuss the best implementation of new requirements
+                        </li>
+                        <li>Demonstrating new additions to the application in agile ceremonies</li>
+                        <li>Modifying existing Ansible playbooks</li>
+                        <li>Prototyping Liquibase for automated database schema changes</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Experience-Container">
+                <div class="Experience-Year">
+                    <p>June 2019 - June 2020</p>
+                    <div class="Company-Logo-Container">
+                        <img src="img/Leidos.png" style="width:120px; height:120px; display:flex;">
+                    </div>
+                </div>
+                <div class="Experience-Box">
+                    <h3>Software Testing Intern – Leidos Technology, <i>Baltimore, MD</i></h3>
+                    Tested software performance and functionality for the FDA as a member of the development team.
+                    <ul>
+                        <li>Collaborated with team members to validate code and database integrity</li>
+                        <li>Worked with developers and business analysts to develop tests based on application
+                            requirements</li>
+                        <li>Performed build verification and functional tests to support development team</li>
+                        <li>Performed 508 tests and make recommendations for UI enhancements</li>
+                        <li>Reported current testing status in Agile scrums and issues to developers using Jira and
+                            weekly
+                            defect reviews</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Experience-Container">
+                <div class="Experience-Year">
+                    <p>June 2017 - August 2017</p>
+                    <div class="Company-Logo-Container">
+                        <img src="img/PEP.png" style="width:120px; height:120px; display:flex; object-fit:scale-down;">
+                    </div>
+                </div>
+                <div class="Experience-Box">
+                    <h3>Web Development Intern – PEP, <i>Kensington, MD</i></h3>
+                    Developed a website for the nonprofit’s online initiatives in order to help them scale to a global
+                    market.
+                    <ul>
+                        <li>Updated content on existing website to promote the organization’s new online learning
+                            initiatives</li>
+                        <li>Completed UI tweaks to enhance website clarity and appearance</li>
+                        <li>Added Facebook tracking pixels to supply marketing team with analytics</li>
+                        <li>Created online learning landing page</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <a id="projects"> </a>
+        <h1 style="text-align:center"> Projects </h1>
+        <div class="Projects-Section">     
+            <div class="Projects-Container">
+                <div class="Projects-Header">
+                    <div class = "Projects-Title"><h2>A Comparison of Heuristic and Metaheuristic Approaches to the TSP</h2> </div>
+                    <p style="font-weight:400;">A comparison of A*, a genetic algorithm, hill climbing, and simulated annealing to solve the Traveling Salseman Problem</p> 
+                </div>
+                             
+                <img src="img/Graph.png" class="Projects-Image">
+                <a href="#" style="font-weight:400;">Coming Soon ></a>
+            </div>
+            <div class="Projects-Container">
+                <div class="Projects-Header">
+                    <div class = "Projects-Title"><h2>Portfolio</h2> </div>
+                    <p style="font-weight:400;">A custom website where I can show off what I've done!</p>             
+                </div>   
+                <img src="img/Portfolio Site.png" class="Projects-Image">
+                <a href="https://github.com/Michael-C-Strobel/Personal-Site" style="font-weight:400;">See it on Github ></a>
+            </div>     
+
+        </div>
+        <div class="section-dark">
             <div class="section">
-                <h1 style="text-align:center">About</h1>
-                <p>
-                    Hello, my name is Michael Strobel. I am an undergraduate computer science student at the University of Maryland, College Park currently pursuing a major in Computer Science and a minor in Statistics. I am currently interested in Aritificial Intelligence and Machine Learning Research, Software Development, and Quantitative Finance. <br><br>
-                    My professional experience includes Software Engineering and Full Lifecycle Development through an ongoing, two-year internship with Leidos Health at the Food & Drug Administration.
-                </p>
-            </div>
-
-            <div class="section-light">
-                <h1 style="text-align:center">Experience</h1>
-                <div class="Experience-Container">
-                    <div class="Experience-Year">
-                        <p>June 2020 - Present</p>
-                        <div class ="Company-Logo-Container">
-                            <img src="img/Leidos.png" style="width:120px; height:120px; display:flex;">
-                        </div>
-                    </div>
-                    <div class="Experience-Box">
-                        <h3>Software Engineering Intern – Leidos Technology, <i>Baltimore, MD</i></h3>
-                        Added functionality to WebLogic application to continue to support the FDA. Collaborated with
-                        configuration management team to automate builds for other programs on the contract.
-                        <ul>
-                            <li>Wrote custom HTML and CSS to customize Oracle ADF view objects</li>
-                            <li>Created new functionality based on business analysts’ user stories</li>
-                            <li>Participated in user story reviews to discuss the best implementation of new requirements</li>
-                            <li>Demonstrated new additions to the application in agile ceremonies</li>
-                            <li>Modified existing Ansible playbooks</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="Experience-Container">
-                    <div class="Experience-Year">
-                        
-                        <p>June 2019 - June 2020</p>
-                        <div class ="Company-Logo-Container">
-                            <img src="img/Leidos.png" style="width:120px; height:120px; display:flex;">
-                        </div>
-                    </div>
-                    <div class="Experience-Box">
-                        <h3>Software Testing Intern – Leidos Technology, <i>Baltimore, MD</i></h3>
-                        Tested software performance and functionality for the FDA as a member of the development team.
-                        <ul>
-                            <li>Collaborate with team members to validate code and database integrity</li>
-                            <li>Work with developers and business analysts to develop tests based on application requirements</li>
-                            <li>Perform build verification and functional tests to support development team</li>
-                            <li>Perform 508 tests and make recommendations for UI enhancements</li>
-                            <li>Report current testing status in Agile scrums and issues to developers using Jira and weekly
-                                defect reviews</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="Experience-Container">
-                    <div class="Experience-Year">
-                        <p>June 2017 - August 2017</p>
-                        <div class ="Company-Logo-Container">
-                            <img src="img/PEP.png" style="width:120px; height:120px; display:flex; object-fit:scale-down;">
-                        </div>
-                    </div>
-                    <div class="Experience-Box">
-                        <h3>Web Development Intern – PEP, <i>Kensington, MD</i></h3>
-                        Developed a website for the nonprofit’s online initiatives in order to help them scale to a global market.
-                        <ul>
-                            <li>Updated content on existing website to promote the organization’s new online learning initiatives</li>
-                            <li>Completed UI tweaks to enhance website clarity and appearance</li>
-                            <li>Added Facebook tracking pixels to supply marketing team with analytics</li>
-                            <li>Created online learning landing page</li>
-                        </ul>
-                    </div>
-                </div>
+                <a id="contact"> <h1 style="text-align: center">Contact Me!</h1> </a>
+                <p style="text-align:center">Email me at mikec.strobel@gmail.com, or connect with me on LinkedIn.</p>
             </div>
         </div>
+    </div>
 </body>
