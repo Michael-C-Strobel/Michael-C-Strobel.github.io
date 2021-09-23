@@ -172,6 +172,11 @@ html {
     font-size: 2em;
   }
 
+  .Experience-Box > a {
+    color:white;
+    text-decoration: underline;
+  }
+
   .Company-Logo-Container {
     display:flex;
     align-items: center;
